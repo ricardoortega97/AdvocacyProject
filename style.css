@@ -1,0 +1,194 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Optima", sans-serif;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+body {
+  background-color: #00755E;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10em;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+#header-item:nth-of-type(1) {
+  width: 50%;
+  float: left;
+}
+
+#header-item:nth-of-type(2) {
+  width: 50%;
+  float: right;
+}
+#header-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#header-button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: center;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 2;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #00755E;
+  background-color: white;
+}
+
+#c {
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Optima", sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 10em;
+}
+
+.navbar li {
+  color: whitesmoke;
+  float: left;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: 1px solid whitesmoke;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  color: #00755E;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar a:hover {
+  color: #04AA6D;
+  font-weight: bold;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #04AA6D;
+}
+
+.navbar {
+  height: 100px;
+}
+
+#theme-button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+#sign-now-button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+#sign-petition {
+  color: whitesmoke;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+.sub-para {
+  color: whitesmoke;
+  width: 55%;
+  padding-right: 10px;
+  
+}
+#sub_text {
+  color: whitesmoke;
+  font-family: "Optima", sans-serif;
+}
+#main_text {
+  color: whitesmoke;
+  font-family: "Optima", sans-serif;
+}
+#petition {
+  color: whitesmoke;
+  font-family: "Optima", sans-serif;
+}
+ul {
+  text-align: left;
+  font-size: 15px;
+}
+.petition {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  margin-bottom: 0px
+}
+
+
+
