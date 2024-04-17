@@ -6,11 +6,12 @@ html {
 h1 {
   text-align: center;
   color: whitesmoke;
-  font-family: "Optima", sans-serif;
+  font-size: 100%;
 }
 
 h2 {
   color: whitesmoke;
+  font-family: "Optima", sans-serif;
 }
 
 body {
@@ -19,9 +20,9 @@ body {
 
 .header-container {
   display: flex;
-  flex-direction: row;
-  padding: 10em;
-  margin-bottom: 10em;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -37,21 +38,32 @@ body {
 #header-img {
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
+  height: 75%;
+  border-radius: 75%;
+  background-color: black;
 }
 
-#header-button {
+.header-button {
   background-color: #04AA6D;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 12px 29px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: center;
+  width: 25%;
 }
-
+.body-text{
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  padding: 10px;
+}
 .footer {
   position: relative;
   left: 0;
@@ -63,29 +75,42 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  z-index: 2;
   height: 50px;
+}
+
+.footer a{
+  text-decoration: none;
+  background-color: white;
+  color: #00755E;
 }
 
 a {
   text-decoration: none;
-  color: #00755E;
+  color: whitesmoke;
+}
+
+#links{
+  text-decoration: none;
   background-color: white;
+  color: #00755E;
 }
 
 #c {
   color: whitesmoke;
-  font-size: 20px;
+  font-size:150%;
   font-family: "Optima", sans-serif;
+  
 }
 
 .navbar ul {
+  font-size: 125%;
   list-style-type: none;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  margin-top: 0;
   width: 100%;
-  margin-bottom: 10em;
+ /* background-color: #00755E;*/
+  z-index: 1;
 }
 
 .navbar li {
@@ -93,15 +118,10 @@ a {
   float: left;
   padding: 5px 10px;
   margin: 0 10px;
-  border: 1px solid whitesmoke;
 }
 
 .navbar a {
-  display: block;
-  text-decoration: none;
-  color: #00755E;
-  text-align: center;
-  padding: 15px;
+  position: sticky;
 }
 
 .navbar a:hover {
@@ -113,12 +133,13 @@ a {
   background-color: black;
   color: #04AA6D;
 }
-
 .navbar {
-  height: 100px;
+  height: auto;
 }
 
 #theme-button {
+  padding: 6px 12px ;
+  font-size: 75%;
   background-color: #04AA6D;
   border: none;
   color: white;
@@ -130,16 +151,19 @@ a {
   gap: 20px;
   width: 100%;
   padding-bottom: 50px;
+  margin: 1em;
 }
 
 .petition-para {
   width: 55%;
   padding-right: 10px;
+  margin: 1em;
 }
 
 .signatures {
   width: 45%;
   padding-right: 10px;
+  margin: .05em;
 }
 
 #sign-now-button {
@@ -150,7 +174,6 @@ a {
   padding: 12px 30px;
   display: inline-block;
   position: relative;
-  z-index: 3;
 }
 #sign-petition {
   color: whitesmoke;
@@ -165,30 +188,94 @@ a {
   color: whitesmoke;
   width: 55%;
   padding-right: 10px;
-  
-}
-#sub_text {
-  color: whitesmoke;
-  font-family: "Optima", sans-serif;
 }
 #main_text {
   color: whitesmoke;
-  font-family: "Optima", sans-serif;
 }
 #petition {
   color: whitesmoke;
   font-family: "Optima", sans-serif;
+  font-size: 125%;
 }
 ul {
   text-align: left;
   font-size: 15px;
 }
+ul.second-ul{
+  font-size: 100%;
+
+}
 .petition {
   position: relative;
-  z-index: 2;
   padding: 20px;
   margin-bottom: 0px
 }
+.revealable {
+  position: relative;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 2s ease;
+  
+}
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#reduce-motion {
+  font-size: 75%;
+  padding: 6px 12px;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+}
+div.bodyClass{
+  margin: .5em;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+  padding: .5em;
+}
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
 
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #09ab8b; /* update the colors and font sizes as you like */
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Optima", sans-serif;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
 
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
 
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.closeBtn {
+  background-color: whitesmoke;
+  font-size: 1rem;
+  font-family: "Optima", sans-serif;
+  border-radius: 25px;
+  border: 50px #00755E;
+  padding: 6px 12px;
+}
