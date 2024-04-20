@@ -234,6 +234,19 @@ div.bodyClass{
   margin-right: 1.25em;
   padding: .5em;
 }
+div.bodyImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5em;
+}
+#image1 {
+  display: block;
+  margin: auto;
+  width: 15%;
+  height: 15%;
+  background-color: transparent;
+}
 /* the modal that covers the background and prevents user interactions */
 .modal {
   display: none; /* hides the modal from view by default*/
@@ -278,4 +291,16 @@ div.bodyClass{
   border-radius: 25px;
   border: 50px #00755E;
   padding: 6px 12px;
+}
+dt{
+  font-weight: bold;
+  font-size: 100%;
+}
+dd{
+  font-size: 90%;
+}
+iframe{
+  margin: 2px;
+  display: flex;
+  align-content: flex-end;
 }
